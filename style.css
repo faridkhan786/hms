@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+margin-bottom: 20px; 
+}
+
+nav {
+position: fixed;
+width: 100%;
+height: 50px;
+background-color: rgba(0,0,0,.5);
+z-index: 99;
+text-align: left;
+border: 1px solid white;
+}
+
+nav a {
+  text-decoration:none;
+  color: #fff;
+  margin-left: 30px;
+  line-height: 50px;
+    }
+ 
+.sect {
+  height: 100%;
+  background-size: cover;
+  background-image: no-repeat;
+  background-attachment: fixed;
+    }
+
+.subSection {
+  height: 50%;
+  background-color: bisque;
+    } 
+.sectOne {
+  background-image: url("dino-reichmuth-84359.jpg");
+    }
+
+.sectTwo {
+  background-image: url("elaine-casap-86010.jpg");
+    }
+
+.sectThree {
+  background-image: url("jeremy-bishop-289214.jpg");
+   }
+
+#content {
+  text-align: center;
+  padding-top: 5%;   
+  color: white;  
+    }
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+    }
+
+ul.dropdown-lr  {
+  width: 350px;
+  height: auto;
+   }
+.dropdown-lr label {
+   color: black;
+   height: auto;
+    }
+
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
